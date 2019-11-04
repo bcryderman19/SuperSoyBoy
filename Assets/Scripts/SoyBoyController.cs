@@ -9,7 +9,8 @@ public class SoyBoyController : MonoBehaviour
     public float accel = 6.0f;
     public float jumpSpeed = 8f;
     public float jumpDurationThreshold = 0.25f;
-    public bool isJumping;    
+    public float airAccel = 3f;
+    public bool isJumping;
 
     private Vector2 input; //stores the controllers current input values for x and y at any point in time. negatives are left and down. positives right or up
     private SpriteRenderer sr; 
@@ -100,11 +101,20 @@ public class SoyBoyController : MonoBehaviour
     void FixedUpdate()
     {
         //1
-        var acceleration = accel;
+        var acceleration = 0f;
+        if (PlayerIsOnGround())
+        {
+            acceleration = accel;
+        }
+        else
+        {
+            acceleration = airAccel;
+        }
+
         var xVelocity = 0f;
 
         //2
-        if (input.x == 0)
+        if (PlayerIsOnGround() && input.x == 0)
         {
             xVelocity = 0f;
         }
