@@ -10,7 +10,7 @@ public class SoyBoyController : MonoBehaviour
     public float jumpSpeed = 8f;
     public float jumpDurationThreshold = 0.25f;
     public float airAccel = 3f;
-    public float jump = 4f;
+    public float jump = 14f;
     public AudioClip runClip;
     public AudioClip jumpClip;
     public AudioClip slideClip;
@@ -26,7 +26,7 @@ public class SoyBoyController : MonoBehaviour
     private float jumpDuration;
     private AudioSource audioSource;
 
-    private void Awake()
+    void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
