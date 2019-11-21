@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    public decimal time;
+
     private Text timerText;
 
     void Awake()
@@ -14,8 +16,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        timerText.text =
-        System.Math.Round((decimal)Time.timeSinceLevelLoad,
-        2).ToString();
+        time = System.Math.Round((decimal)Time.timeSinceLevelLoad, 2);
+        timerText.text = time.ToString();
     }
 }
