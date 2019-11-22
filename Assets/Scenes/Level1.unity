@@ -375,6 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a476ea54471cc409e6034a2a8c6f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: 
 --- !u!4 &25307458
 Transform:
   m_ObjectHideFlags: 0
@@ -6407,6 +6408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1565811753}
+  - component: {fileID: 1565811754}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -6429,6 +6431,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1565811754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565811752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e5bc6495b50f0748bb610e697bc49b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: 
 --- !u!4 &1595555086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010530627420, guid: 45a59239ea665d943ac6742834b37556,
