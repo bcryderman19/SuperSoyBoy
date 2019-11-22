@@ -6,8 +6,8 @@ public class CameraLerpToTransform : MonoBehaviour
 {
     //1 specify which target to track , tracking spped and camera bounds
     public Transform camTarget;
-
     public float trackingSpeed;
+    public float cameraZDepth = -10f;
     public float minX;
     public float minY;
     public float maxX;
