@@ -376,6 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
+  buttonPrefab: {fileID: 0}
 --- !u!4 &25307458
 Transform:
   m_ObjectHideFlags: 0
@@ -4935,6 +4936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camTarget: {fileID: 2138855908}
   trackingSpeed: 2.5
+  cameraZDepth: -10
   minX: -100
   minY: -100
   maxX: 100
@@ -6443,7 +6445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e5bc6495b50f0748bb610e697bc49b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
+  levelName: test2
 --- !u!4 &1595555086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010530627420, guid: 45a59239ea665d943ac6742834b37556,
